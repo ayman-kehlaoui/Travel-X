@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PFE</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="hero-container">
+      <div class="hero-bg"></div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div
+          class="container-fluid px-4 d-flex justify-content-between align-items-center"
+        >
+          <a href="#" class="navbar-brand fw-bold fs-3 logo">TravelX</a>
+
+          <ul class="navbar-nav d-flex flex-row mx-auto">
+            <li class="nav-item links mx-2">
+              <a class="nav-link text-white fw-bold px-3" href="#"
+                ><i class="fa-solid fa-bed"></i> Stays</a
+              >
+            </li>
+            <li class="nav-item links mx-2">
+              <a class="nav-link text-white fw-bold px-3" href="#"
+                ><i class="fa-solid fa-plane"></i> Flights</a
+              >
+            </li>
+            <li class="nav-item links mx-2">
+              <a class="nav-link text-white fw-bold px-3" href="#"
+                ><i class="fas fa-tags"></i> Deals</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a
+              href="login/index.html"
+              class="btn btn-outline-light rounded-pill px-4 fw-bold"
+              >Sign In</a
+            >
+            <a
+              href="login/register.html"
+              class="btn btn-primary rounded-pill px-4 fw-bold"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div class="search-bar d-flex space-between p-2 black-color">
+        <div class="search-segment flex-grow-1 px-3 border-end">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <i class="fa-solid fa-location-dot text-secondary"></i>
+            <span class="fw-bold text-dark small">Where to?</span>
+          </div>
+          <input
+            type="text"
+            class="form-control border-0 p-0 shadow-none bg-transparent"
+            placeholder="e.g. Paris"
+          />
+        </div>
+
+        <div class="search-segment flex-grow-1 px-3 border-end">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <i class="fa-regular fa-calendar text-secondary"></i>
+            <span class="fw-bold text-dark small">Check-in</span>
+          </div>
+          <input
+            type="date"
+            class="form-control border-0 p-0 shadow-none bg-transparent"
+          />
+        </div>
+
+        <div class="search-segment flex-grow-1 px-3 border-end">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <i class="fa-solid fa-user-group text-secondary"></i>
+            <span class="fw-bold text-dark small">Guests</span>
+          </div>
+          <input
+            type="text"
+            class="form-control border-0 p-0 shadow-none bg-transparent"
+            placeholder="Add guests"
+          />
+        </div>
+
+        <button
+          class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center ms-2 search-btn"
+          style="width: 48px; height: 48px"
+        >
+          <i class="fa-solid fa-magnifying-glass fs-5"></i>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <span
+        class="font-weight-bold he-1 small-text narrow-text d-flex mx-6 my-6 container-fluid"
+        >Featured destinations</span
+      >
+
+      <div class="cards-container">
+        <div class="promos">
+          <div
+            class="promo-image"
+            style="background-image: url('images/australia.jpg')"
+          ></div>
+          <div class="promo-content">
+            <h5 class="promo-title">Sydney, Australia</h5>
+            <p class="promo-text">
+              Harbour views, famous beaches and a relaxed atmosphere.
+            </p>
+            <a
+              href="sydney.html"
+              class="btn btn-sm btn-primary rounded-pill mt-2"
+              >Travel to Sydney</a
+            >
+          </div>
+        </div>
+
+        <div class="promos">
+          <div
+            class="promo-image"
+            style="background-image: url('images/london.jpg')"
+          ></div>
+          <div class="promo-content">
+            <h5 class="promo-title">London, United Kingdom</h5>
+            <p class="promo-text">
+              Classic landmarks, parks and a mix of modern and old streets.
+            </p>
+            <a
+              href="london.html"
+              class="btn btn-sm btn-primary rounded-pill mt-2"
+              >Travel to London</a
+            >
+          </div>
+        </div>
+
+        <div class="promos">
+          <div
+            class="promo-image"
+            style="
+              background-image: url('images/pexels-solyartphotos-15863589.jpg');
+            "
+          ></div>
+          <div class="promo-content">
+            <h5 class="promo-title">Santorini, Greece</h5>
+            <p class="promo-text">
+              White houses, blue sea and beautiful sunsets over the island.
+            </p>
+            <a
+              href="santorini.html"
+              class="btn btn-sm btn-primary rounded-pill mt-2"
+              >Travel to Santorini</a
+            >
+          </div>
+        </div>
+
+        <div class="promos">
+          <div
+            class="promo-image"
+            style="background-image: url('images/pexels-thales13-23385438.jpg')"
+          ></div>
+          <div class="promo-content">
+            <h5 class="promo-title">Tokyo, Japan</h5>
+            <p class="promo-text">
+              Neon lights, quiet temples and tasty street food in one city.
+            </p>
+            <a
+              href="tokyo.html"
+              class="btn btn-sm btn-primary rounded-pill mt-2"
+              >Travel to Tokyo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-6 info-box">
+          <h6 class="info-title">Easy search</h6>
+          <p class="info-text">
+            Choose your city, dates and guests in one simple bar.
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 info-box">
+          <h6 class="info-title">Student friendly</h6>
+          <p class="info-text">
+            Clear cards with basic information, good for simple projects.
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 info-box">
+          <h6 class="info-title">Popular places</h6>
+          <p class="info-text">
+            Cities and views that many people dream to visit one day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-contact text-center text-white py-4">
+      <p class="mb-1">Made by: Ayman Kehlaoui</p>
+      <p class="mb-1">
+        Gmail:
+        <a
+          href="mailto:kehlaouiayman@gmail.com"
+          class="text-decoration-none text-light"
+          >kehlaouiayman@gmail.com</a
+        >
+      </p>
+      <p class="mb-0">Phone number: 0694142908</p>
+    </footer>
+  </body>
+</html>
